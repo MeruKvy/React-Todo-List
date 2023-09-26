@@ -6,6 +6,8 @@ export const TodoForm = ({addTodo}) => {
     const handleSubmit = e => {
         e.preventDefault(); //to prevent reloding page after subbmiting
 
+        value === "" ? null
+
         addTodo(value)
 
         setValue('')
